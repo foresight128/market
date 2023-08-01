@@ -1,0 +1,52 @@
+//  반응형
+@mixin respond($size) {
+  @media screen and (max-width:$size) {
+    @content;
+  }
+}
+
+@mixin banner($url) {
+  background-image: url($url);
+}
+
+@mixin imageBox($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+}
+
+@mixin bodyTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28.96px;
+  color: $black;
+  margin-bottom: 40px;
+}
+
+@mixin bodyText { 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20.27px;
+  color: $black;
+  margin-bottom: 80px;
+}
+
+@mixin liTitle { 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20.27px;
+  color: $blue;
+}
+
+@mixin liText { 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20.27px;
+  color: #555555;
+}
+
+@mixin footerText {
+  font-weight: 500;
+  font-size: 12px; 
+  line-height: 17.38px;
+  color: $gray;
+}
